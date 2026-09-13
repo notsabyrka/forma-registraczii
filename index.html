@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Форма регистрации</title>
+  </head>
+  <body>
+    <main class="signup">
+      <div class="signup__container">
+        <header class="signup__header">
+          <h1 class="signup__title">Создайте профиль в Bloom</h1>
+          <p class="signup__description">
+            Сохраните любимые букеты, отслеживайте заказы и получайте
+            персональные предложения.
+          </p>
+        </header>
+        <form
+          class="signup__form form"
+          action="https://postman-echo.com/post"
+          method="POST"
+        >
+          <div class="form__fields">
+            <div class="form__field">
+              <label class="form__label" for="first-name">Имя</label>
+              <input
+                class="form__input"
+                type="text"
+                id="first-name"
+                name="first_name"
+                placeholder="Иван"
+                required
+              />
+            </div>
+            <div class="form__field">
+              <label class="form__label" for="last-name">Фамилия</label>
+              <input
+                class="form__input"
+                type="text"
+                id="last-name"
+                name="last_name"
+                placeholder="Соколов"
+                required
+              />
+            </div>
+            <div class="form__field form__field--full">
+              <label class="form__label" for="email">E-mail</label>
+              <input
+                class="form__input"
+                type="email"
+                id="email"
+                name="email"
+                placeholder="ivan@example.com"
+                required
+              />
+            </div>
+            <div class="form__field">
+              <label class="form__label" for="password">Пароль</label>
+              <input
+                class="form__input"
+                type="password"
+                id="password"
+                name="password"
+                placeholder="*******"
+                required
+              />
+            </div>
+            <div class="form__field">
+              <label class="form__label" for="password-confirm"
+                >Повторите пароль</label
+              >
+              <input
+                class="form__input"
+                type="password"
+                id="password-confirm"
+                name="password_confirm"
+                placeholder="*******"
+                required
+              />
+            </div>
+          </div>
+          <div class="form__field form__field--checkbox">
+            <label class="form__checkbox-label" for="terms">
+              <input
+                class="form__checkbox-input"
+                type="checkbox"
+                id="terms"
+                name="terms_accepted"
+                required
+              />
+              <span class="form__checkbox-text"
+                >Я принимаю условия использования сервиса и политику обработки
+                персональных данных.</span
+              >
+            </label>
+          </div>
+          <button class="form__button" type="submit">Создать аккаунт</button>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
